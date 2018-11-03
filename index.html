@@ -2,6 +2,7 @@
 <HEAD>
  <LINK rel="stylesheet" type="text/css" href="Text.css">
  <LINK rel="stylesheet" type="text/css" href="Menu.css">
+ <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
  <SCRIPT type="text/javascript">
   function contentLoaded() {
    //alert('index loaded');
@@ -28,7 +29,13 @@
 <BODY onload="contentLoaded()">
  <TABLE id="headerTable">
   <TR>
-   <TD style="width: 90px"><div class="penName" onmousedown="newContent('PictureMenu.html','2000','1100');"></div></TD>
+   <TD style="width: 90px">
+    <div class="penName">
+     <div class="highlight" style="width: 90px; height: 105px;" onmouseover="this.style='opacity:0.5; width: 90px; height: 105px;'" onmouseout="this.style='opacity:0.0; width: 90px; height: 105px;'" onmousedown="newContent('PictureMenu.html','2000','1100');" href="#">
+      <p><BR>HOME</p>
+     </div>
+    </div>
+   </TD>
    <TD style="width: 90px"></TD>
    <TD></TD>
    <TD style="width: 500px; padding: 0px; text-align: center; vertical-align: top;">
