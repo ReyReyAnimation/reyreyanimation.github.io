@@ -1,0 +1,27 @@
+  div.penName {
+   background-image:url('images/Pen-Name-Animation.gif');
+   width: 90px;
+   height: 105px;
+   background-position: center center;
+   background-repeat: no-repeat;
+   border: 1px solid white;
+   background-size: 250px 150px;
+  }
+
+  div.Coffee {
+   background-image:url('images/Coffee-2.gif');
+   width: 180px;
+   height: 105px;
+   background-position: center top;
+   background-repeat: no-repeat;
+   border: 1px solid white;
+   background-size: 250px 150px;
+  }
+
+  div.menu {
+   font-weight: bold;
+   font-family: Calibri;
+   letter-spacing: 2px;
+   font-size: 14px;
+   color: grey;
+  }

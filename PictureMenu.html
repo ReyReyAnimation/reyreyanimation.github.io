@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
+ <SCRIPT type="text/javascript">
+  var idealWidth = 1000;
+  var idealHeight = 2000;
+
+  function contentLoaded() {
+   idealHeight = document.getElementById('contentId').offsetHeight + 50;
+   idealWidth = document.getElementById('contentId').offsetWidth + 50;
+   parent.contentResize(idealHeight, idealWidth);
+  }
+
+  function newContent(content, height, width) {
+   this.location.replace(content);
+   //window.location.replace(content); // alternative command
+   //window.location.href=content;     // alternative command
+   parent.contentResize(height, width);
+  } 
+ </SCRIPT>
+</HEAD>
+<BODY onload="contentLoaded()">
+<DIV id="contentId">
+ <TABLE>
+  <TR>
+   <TD>
+    <div class="background" style="background-image:url('images/Animation/girl-in-trouble.gif');">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="newContent('Animation.html','2000','1100');" href="#">
+      <p>ANIMATION</p>
+     </div>
+    </div>
+   </TD>
+   <TD>
+    <div class="background" style="background-image:url('images/Illustration/RavenGirlSmall.jpg');">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="newContent('Illustration.html','2000','1100');" href="#">
+      <p>ILLUSTRATION</p>
+     </div>
+    </div>
+   </TD>
+   <TD>
+    <div class="background" style="background-image:url('images/Animation/G-Mouse-1st-scene-3.gif');">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="newContent('Showreels.html','2000','1100');" href="#">
+      <p>SHOWREELS</p>
+     </div>
+    </div>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <!--<div class="background" style="background-image:url('images/Competition/YCNGiantPeachFinal.jpg'); width:300px;">-->
+    <div class="background" style="background-image:url('images/Competition/Barbican2small.jpg'); width:300px;">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="newContent('CompetitionEntries.html','2000','1100');" href="#">
+      <p>COMPETITION<BR/>EN TRIES</p>
+     </div>
+    </div>
+   </TD>
+   <TD>
+    <div class="background" style="background-size: 481px 340px; background-position:center top; background-image:url('images/CharacterDesign/SPIN-AROUND!.gif');">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="newContent('CharacterDesign.html','2000','1100');" href="#">
+      <p>CHARACTER<BR/>DESIGN</p>
+     </div>
+    </div>
+   </TD>
+   <TD>
+    <!--<div class="background" style="background-image:url('images/Competition/LDL-Maori-God-Tawhirimatea-Final.gif');">-->
+    <div class="background" style="background-image:url('images/Competition/YCNGiantPeachFinal.jpg'); width:300px;">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="parent.newWebPage('http://rc259573-sp.blogspot.com');" href="#">
+      <p>BLOG</p>
+     </div>
+    </div>
+   </TD>
+  </TR>
+ </TABLE>
+</DIV>
+</BODY>
+</HTML>

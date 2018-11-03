@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <LINK rel="stylesheet" type="text/css" href="Menu.css">
+ <SCRIPT type="text/javascript">
+  function contentLoaded() {
+   //alert('index loaded');
+  }
+
+  function contentResize(height, width) {
+   document.getElementById('content').height = height;
+   document.getElementById('content').width = width;
+   //alert('contentResize('+height+','+width+')');
+  }
+
+  function newContent(site, height, width) {
+   document.getElementById('content').src = site;
+   contentResize(height, width);
+   //alert('newContent('+site+', '+height+', '+width)
+  } 
+
+  function newWebPage(site) {
+   location.replace(site);
+   //alert("newWebPage("+site+")")
+  }
+ </SCRIPT>
+</HEAD>
+<BODY onload="contentLoaded()">
+ <TABLE id="headerTable">
+  <TR>
+   <TD style="width: 90px"><div class="penName"></div></TD>
+   <TD style="width: 90px"></TD>
+   <TD></TD>
+   <TD style="width: 500px; padding: 0px; text-align: center; vertical-align: top;">
+    <table style="width: 500px;">
+     <tr style="text-align: center;">
+      <td style="padding: 0px; height: 35px;">
+       <p class="titleText">REY CURLEY</p>
+      </td>
+     </tr>
+     <tr style="text-align: center;">
+      <td style="padding: 0px; height: 30px;">
+       <p class="header1Text" style="line-height: 0.5;">Animator and Character Designer</p>
+      </td>
+     </tr>
+     <tr style="text-align: center;">
+      <td style="padding: 0px; vertical-align: middle;">
+        <a href="https://www.linkedin.com/in/rey-curley-9090ba149"><img src="images/In-2C-21px-TM.png" height="21px" width="32px"></img></a>
+        &nbsp;
+        <a href="https://www.youtube.com/channel/UCBQIeP8D91U8U77oVGCz5_Q"><img src="images/youtube.png" height="21px" width="87px"></img></a>
+        &nbsp;
+        <a href="http://rc259573-sp.blogspot.com"><img src="images/blogspot.jpg" height="21px" width="21px"></img></a>
+      </td>
+     </tr>
+     <tr style="text-align: center;">
+      <td style="padding: 0px; vertical-align: middle; text-align: center;">
+       <p class="bodyText" style="text-align: center;">Contact:&nbsp;&nbsp;<a href="mailto:reyreyanimation@gmail.com">ReyReyAnimation@gmail.com</a>&nbsp;&nbsp;</p>
+      </td>
+     </tr>
+    </table>
+   </TD>
+   <TD></TD>
+   <TD style="width: 180px"><div class="coffee"></div></TD>
+  </TR>
+  <TR>
+   <TD colspan="6" style="text-align: right;"><p class="copyright">Rey Curley BA (Hons) Animator & Character Designer &copy; 2018</p></TD>
+  </TR>
+ </TABLE>
+ <TABLE id="menuTable">
+  <TR>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('PictureMenu.html','2000','1100');" href="#">
+     HOME
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('Animation.html','2000','1100');" href="#">
+     ANIMATION
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('Illustration.html','2000','1100');" href="#">
+     ILLUSTRATION
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('Showreels.html','2000','1100');" href="#">
+     SHOWREELS
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('CompetitionEntries.html','2000','1100');" href="#">
+     COMPETITION&nbsp;ENTRIES
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('CharacterDesign.html','2000','1100');" href="#">
+     CHARACTER&nbsp;DESIGN
+    </div>
+   </TD>
+   <TD>
+    <div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newWebPage('http://rc259573-sp.blogspot.com');" href="#">
+     BLOG
+    </div>
+   </TD>
+  </TR>
+ </TABLE>
+ <TABLE>
+  <TR>
+  <TR>
+   <TD></TD>
+   <TD>
+    <iframe id="content" src="PictureMenu.html" height="2000" width="1100" style="border:none;"></iframe>
+   </TD>
+   <TD></TD>
+  </TR>
+ </TABLE>
+</BODY>
+</HTML>

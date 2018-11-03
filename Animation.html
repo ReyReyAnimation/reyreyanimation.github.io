@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
+ <LINK rel="stylesheet" type="text/css" href="Caravan.css">
+ <SCRIPT type="text/javascript" src="Caravan.js"></SCRIPT>
+ <SCRIPT type="text/javascript">
+  var idealWidth = 1000;
+  var idealHeight = 2000;
+  function contentLoaded() {
+   idealHeight = document.getElementById('contentId').offsetHeight + 50;
+   idealWidth = document.getElementById('contentId').offsetWidth + 50;
+   parent.contentResize(idealHeight, idealWidth);
+  }
+ </SCRIPT>
+</HEAD>
+<BODY onload="caravanMove(); contentLoaded();">
+<DIV id="contentId">
+ <TABLE>
+  <TR><TD colspan="3"><p class="header1Text">ANIMATION</p></TD></TR>
+  <TR><TD colspan="3" style="padding-top: 0px;"><HR/></TD></TR>
+  <TR>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Final-Enenra.gif');"></div></TD>
+   <TD><div id="caravanBackground"><div id="caravanAnimation"></div></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Competition/LDL-Maori-God-Tawhirimatea-Final.gif');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Tiny-Face-Man-Final.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Infernal-Fallen-Angel-test.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-size: 533px 300px; background-image:url('images/Animation/girl-writing.gif');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/girl-in-trouble.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Covered-Girl.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Skull-close-up-2.gif');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:300px; height:300px; background-size: 300px 169px; background-image:url('images/Animation/4th-transformation.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/orge-hero.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/7th-Guy-shot-in-face.gif');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/G-Mouse-1st-scene-3.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-size: 300px 169px; background-image:url('images/Animation/6th-Transforms.gif');"></div></TD>
+   <TD><div class="background" style="width:300px; height:300px; background-image:url('images/Animation/Test-Flash-Final.gif');"></div></TD>
+  </TR>
+  <TR><TD colspan="3" style="padding-top: 10px;"><HR/></TD></TR>
+ </TABLE>
+</BODY>
+</DIV>
+</HTML>

@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
+ <SCRIPT type="text/javascript">
+  var idealWidth = 1000;
+  var idealHeight = 2000;
+  function contentLoaded() {
+   idealHeight = document.getElementById('contentId').offsetHeight + 50;
+   idealWidth = document.getElementById('contentId').offsetWidth + 50;
+   parent.contentResize(idealHeight, idealWidth);
+  }
+ </SCRIPT>
+</HEAD>
+<BODY onload="contentLoaded()">
+<DIV id="contentId">
+ <TABLE>
+  <TR><TD colspan="3"><p class="header1Text">CHARACTER DESIGN</p></TD></TR>
+  <TR><TD colspan="3" style="padding-top: 0px;"><HR/></TD></TR>
+  <TR>
+   <TD><div class="background" style="width:350px; height:350px; background-image:url('images/CharacterDesign/Hunter the Slothman Small.jpg');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-size: 495px 350px; background-image:url('images/CharacterDesign/SPIN-AROUND!.gif');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-image:url('images/CharacterDesign/Kai the Slugman.jpg');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:350px; height:350px; background-size: 350px 240px; background-image:url('images/CharacterDesign/design2.png');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-image:url('images/CharacterDesign/Gangster-Mouse.gif');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-size: 350px 240px; background-image:url('images/CharacterDesign/design3.png');"></div></TD>
+  </TR>
+  <TR>
+   <TD><div class="background" style="width:350px; height:350px; background-image:url('images/CharacterDesign/Magic Man Darker.jpg');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-size: 350px 240px; background-image:url('images/CharacterDesign/design1.png');"></div></TD>
+   <TD><div class="background" style="width:350px; height:350px; background-image:url('images/CharacterDesign/D.jpg');"></div></TD>
+  </TR>
+  <TR><TD colspan="3" style="padding-top: 10px;"><HR/></TD></TR>
+ </TABLE>
+</BODY>
+</DIV>
+</HTML>

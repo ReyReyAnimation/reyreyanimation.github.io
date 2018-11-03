@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
+ <SCRIPT type="text/javascript">
+  var idealWidth = 1000;
+  var idealHeight = 2000;
+
+  function contentLoaded() {
+   idealHeight = document.getElementById('contentId').offsetHeight + 50;
+   idealWidth = document.getElementById('contentId').offsetWidth + 50;
+   parent.contentResize(idealHeight, idealWidth);
+  }
+
+  function newContent(content, height, width) {
+   this.location.replace(content);
+   //window.location.replace(content); // alternative command
+   //window.location.href=content;     // alternative command
+   parent.contentResize(height, width);
+  } 
+ </SCRIPT>
+</HEAD>
+<BODY onload="contentLoaded()">
+<DIV id="contentId">
+ <TABLE>
+  <TR><TD colspan="3"><p class="header1Text">SHOWREELS</p></TD></TR>
+  <TR><TD colspan="3" style="padding-top: 0px;"><HR/></TD></TR>
+  <TR>
+   <TD>
+    <p class="header2Text" onmousedown="this.style='font-weight: normal;'; parent.newWebPage('https://www.youtube.com/watch?v=AUvhOQQZAnU');">
+     2018 SHOWREEL 
+    </p>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <div class="background" style="background-image:url('images/Animation/Covered-Girl.gif'); width:300px;">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="parent.newWebPage('https://www.youtube.com/watch?v=AUvhOQQZAnU');" href="#">
+      <p>2018 SHOWREEL</p>
+     </div>
+    </div>
+   </TD>
+  <TR>
+  <TR>
+   <TD style="text-align: left;">
+    <p class="smallText" onmouseover="this.style='font-weight: bold;'" onmouseout="this.style='font-weight: normal;'" onmousedown="this.style='font-weight: normal;'; parent.newWebPage('https://www.youtube.com/watch?v=AUvhOQQZAnU');">
+     <u>https://www.youtube.com/watch?v=AUvhOQQZAnU</u>
+    </p>
+   </TD>
+  </TR>
+  <TR>
+   <TD style="padding-top: 10px;">
+    <p class="header2Text" onmousedown="this.style='font-weight: normal;'; parent.newWebPage('https://www.youtube.com/watch?v=3H2yMXTtTwk');">
+     2017 SHOWREEL 
+    </p>
+   </TD>
+  </TR>
+  </TR>
+   <TD>
+    <div class="background" style="background-image:url('images/Animation/G-Mouse-1st-scene-3.gif');">
+     <div class="highlight" onmouseover="this.style='opacity:0.5;'" onmouseout="this.style='opacity:0.0;'" onmousedown="parent.newWebPage('https://www.youtube.com/watch?v=3H2yMXTtTwk');" href="#">
+      <p>2017 SHOWREEL</p>
+     </div>
+    </div>
+   </TD>
+  </TR>
+  <TR>
+   <TD style="text-align: left;">
+    <p class="smallText" onmouseover="this.style='font-weight: bold;'" onmouseout="this.style='font-weight: normal;'" onmousedown="this.style='font-weight: normal;'; parent.newWebPage('https://www.youtube.com/watch?v=3H2yMXTtTwk');">
+     <u>https://www.youtube.com/watch?v=3H2yMXTtTwk</u>
+    </p>
+   </TD>
+  </TR>
+ </TABLE>
+</DIV>
+</BODY>
+</HTML>
