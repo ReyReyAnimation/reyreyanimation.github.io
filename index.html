@@ -4,29 +4,24 @@
  <LINK rel="stylesheet" type="text/css" href="Menu.css">
  <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
  <SCRIPT type="text/javascript">
-  function contentLoaded() {
-   //alert('index loaded');
-  }
-
   function contentResize(height, width) {
    document.getElementById('content').height = height;
    document.getElementById('content').width = width;
-   //alert('contentResize('+height+','+width+')');
   }
 
   function newContent(site, height, width) {
    document.getElementById('content').src = site;
    contentResize(height, width);
-   //alert('newContent('+site+', '+height+', '+width)
   } 
 
   function newWebPage(site) {
-   location.replace(site);
-   //alert("newWebPage("+site+")")
+   var win = window.open(site, '_blank');
+   win.focus();
+   //location.replace(site);
   }
  </SCRIPT>
 </HEAD>
-<BODY onload="contentLoaded()">
+<BODY>
  <TABLE id="headerTable">
   <TR>
    <TD style="width: 90px">
@@ -52,11 +47,11 @@
      </tr>
      <tr style="text-align: center;">
       <td style="padding: 0px; vertical-align: middle;">
-        <a href="https://www.linkedin.com/in/rey-curley-9090ba149"><img src="images/In-2C-21px-TM.png" height="21px" width="32px"></img></a>
+        <a onmousedown="newWebPage('https://www.linkedin.com/in/rey-curley-9090ba149');" href="#"><img src="images/In-2C-21px-TM.png" height="21px" width="32px"></img></a>
         &nbsp;
-        <a href="https://www.youtube.com/channel/UCBQIeP8D91U8U77oVGCz5_Q"><img src="images/youtube.png" height="21px" width="87px"></img></a>
+        <a onmousedown="newWebPage('https://www.youtube.com/channel/UCBQIeP8D91U8U77oVGCz5_Q');" href="#"><img src="images/youtube.png" height="21px" width="87px"></img></a>
         &nbsp;
-        <a href="http://rc259573-sp.blogspot.com"><img src="images/blogspot.jpg" height="21px" width="21px"></img></a>
+        <a onmousedown="newWebPage('http://rc259573-sp.blogspot.com');" href="#"><img src="images/blogspot.jpg" height="21px" width="21px"></img></a>
       </td>
      </tr>
      <tr style="text-align: center;">
