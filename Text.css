@@ -33,11 +33,28 @@
    text-align: left;
   }
 
+  p.bodyTextON {
+   font-weight: bold;
+   font-family: Calibri;
+   font-size: 16px;
+   color: black;
+   text-align: left;
+   cursor: pointer;
+  }
+
   p.smallText {
    font-weight: normal;
    font-family: Calibri;
    font-size: 12px;
    color: black;
+  }
+
+  p.smallTextON {
+   font-weight: bold;
+   font-family: Calibri;
+   font-size: 12px;
+   color: black;
+   cursor: pointer;
   }
 
   p.copyright {

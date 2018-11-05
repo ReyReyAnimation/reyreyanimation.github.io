@@ -25,3 +25,12 @@
    font-size: 14px;
    color: grey;
   }
+
+  div.menuON {
+   font-weight: bold;
+   font-family: Calibri;
+   letter-spacing: 2px;
+   font-size: 14px;
+   color: black;
+   cursor: pointer;
+  }
