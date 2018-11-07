@@ -1,0 +1,24 @@
+  p.bodyLink {
+   font-weight: normal;
+   font-family: Calibri;
+   font-size: 16px;
+   color: black;
+   text-align: left;
+  }
+
+  p.bodyLink:hover {
+   font-weight: bold;
+   cursor: pointer;
+  }
+
+  p.smallLink {
+   font-weight: normal;
+   font-family: Calibri;
+   font-size: 12px;
+   color: black;
+  }
+
+  p.smallLink:hover {
+   font-weight: bold;
+   cursor: pointer;
+  }
