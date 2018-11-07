@@ -1,69 +1,53 @@
 <HTML>
 <HEAD>
  <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
- <SCRIPT type="text/javascript">
-  var idealWidth = 1000;
-  var idealHeight = 2000;
-
-  function contentLoaded() {
-   idealHeight = document.getElementById('contentId').offsetHeight + 50;
-   idealWidth = document.getElementById('contentId').offsetWidth + 50;
-   parent.contentResize(idealHeight, idealWidth);
-  }
-
-  function newContent(content, height, width) {
-   this.location.replace(content);
-   //window.location.replace(content); // alternative command
-   //window.location.href=content;     // alternative command
-   parent.contentResize(height, width);
-  } 
- </SCRIPT>
+ <SCRIPT type="text/javascript" src="Child.js"></SCRIPT>
 </HEAD>
 <BODY onload="contentLoaded()">
 <DIV id="contentId">
  <TABLE>
   <TR>
    <TD>
-    <div class="background" style="background-image:url('images/Animation/girl-in-trouble.gif');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('Animation.html','2000','1100');" href="#">
-      <p>ANIMATION</p>
+    <div class="picContainer" style="background-image:url('images/Animation/girl-in-trouble.gif');">
+     <div class="picOverlay" onmousedown="newContent('Animation.html');">
+      <div class="picText">ANIMATION</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Illustration/RavenGirlSmall.jpg');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('Illustration.html','2000','1100');" href="#">
-      <p>ILLUSTRATION</p>
+    <div class="picContainer" style="background-image:url('images/Illustration/RavenGirlSmall.jpg');">
+     <div class="picOverlay" onmousedown="newContent('Illustration.html');">
+      <div class="picText">ILLUSTRATION</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Animation/G-Mouse-1st-scene-3.gif');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('Showreels.html','2000','1100');" href="#">
-      <p>SHOWREELS</p>
+    <div class="picContainer" style="background-image:url('images/Animation/G-Mouse-1st-scene-3.gif');">
+     <div class="picOverlay" onmousedown="newContent('Showreels.html');">
+      <div class="picText">SHOWREELS</div>
      </div>
     </div>
    </TD>
   </TR>
   <TR>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/Barbican2small.jpg'); width:300px;">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('CompetitionEntries.html','2000','1100');" href="#">
-      <p>COMPETITION ENTRIES</p>
+    <div class="picContainer" style="background-image:url('images/Competition/Barbican2small.jpg'); width:300px;">
+     <div class="picOverlay" onmousedown="newContent('CompetitionEntries.html');">
+      <div class="picText">COMPETITION ENTRIES</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-size: 481px 340px; background-position:center top; background-image:url('images/CharacterDesign/SPIN-AROUND!.gif');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('CharacterDesign.html','2000','1100');" href="#">
-      <p>CHARACTER DESIGN</p>
+    <div class="picContainer" style="background-size: 481px 340px; background-position:center top; background-image:url('images/CharacterDesign/SPIN-AROUND!.gif');">
+     <div class="picOverlay" onmousedown="newContent('CharacterDesign.html');">
+      <div class="picText">CHARACTER DESIGN</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/YCNGiantPeachFinal.jpg'); width:300px;">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('http://rc259573-sp.blogspot.com');" href="#">
-      <p>BLOG</p>
+    <div class="picContainer" style="background-image:url('images/Competition/YCNGiantPeachFinal.jpg'); width:300px;">
+     <div class="picOverlay" onmousedown="parent.newWebPage('http://rc259573-sp.blogspot.com');">
+      <div class="picText">BLOG</div>
      </div>
     </div>
    </TD>

@@ -3,38 +3,24 @@
  <LINK rel="stylesheet" type="text/css" href="Text.css">
  <LINK rel="stylesheet" type="text/css" href="Menu.css">
  <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
- <SCRIPT type="text/javascript">
-  function contentResize(height, width) {
-   document.getElementById('content').height = height;
-   document.getElementById('content').width = width;
-  }
-
-  function newContent(site, height, width) {
-   document.getElementById('content').src = site;
-   contentResize(height, width);
-  } 
-
-  function newWebPage(site) {
-   var win = window.open(site, '_blank');
-   win.focus();
-   //location.replace(site);
-  }
- </SCRIPT>
+ <SCRIPT type="text/javascript" src="Parent.js"></SCRIPT>
 </HEAD>
 <BODY>
+
  <TABLE id="headerTable">
   <TR>
    <TD style="width: 90px">
     <div class="penName">
-     <div class="highlight" style="width: 90px; height: 105px;" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="newContent('PictureMenu.html','2000','1100');" href="#">
-      <p style="margin-top: 42px;">HOME</p>
+     <div class="penOverlay" onmousedown="newIFrameContent('PictureMenu.html','2000','1100');">
+      <div class="penText">HOME</div>
      </div>
     </div>
    </TD>
    <TD style="width: 90px"></TD>
    <TD></TD>
    <TD style="width: 500px; padding: 0px; text-align: center; vertical-align: top;">
-    <table style="width: 500px;">
+
+    <table id="titleTable" style="width: 500px;">
      <tr style="text-align: center;">
       <td style="padding: 0px; height: 35px;">
        <p class="titleText">REY CURLEY</p>
@@ -60,6 +46,7 @@
       </td>
      </tr>
     </table>
+
    </TD>
    <TD></TD>
    <TD style="width: 180px"><div class="coffee"></div></TD>
@@ -68,47 +55,48 @@
    <TD colspan="6" style="text-align: right;"><p class="copyright">Rey Curley BA (Hons) Animator & Character Designer &copy; 2018</p></TD>
   </TR>
  </TABLE>
+
  <TABLE id="menuTable">
   <TR>
    <TD>
-    <!--<div class="menu" onmouseover="this.style='color:black;'" onmouseout="this.style='color:grey;'" onmousedown="newContent('PictureMenu.html','2000','1100');" href="#">-->
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('PictureMenu.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('PictureMenu.html','2000','1100');" href="#">
      HOME
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('Animation.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('Animation.html','2000','1100');" href="#">
      ANIMATION
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('Illustration.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('Illustration.html','2000','1100');" href="#">
      ILLUSTRATION
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('Showreels.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('Showreels.html','2000','1100');" href="#">
      SHOWREELS
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('CompetitionEntries.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('CompetitionEntries.html','2000','1100');" href="#">
      COMPETITION&nbsp;ENTRIES
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newContent('CharacterDesign.html','2000','1100');" href="#">
+    <div class="menu" onmousedown="newIFrameContent('CharacterDesign.html','2000','1100');" href="#">
      CHARACTER&nbsp;DESIGN
     </div>
    </TD>
    <TD>
-    <div class="menu" onmouseover="this.className='menuON';" onmouseout="this.className='menu';" onmousedown="newWebPage('http://rc259573-sp.blogspot.com');" href="#">
+    <div class="menu" onmousedown="newWebPage('http://rc259573-sp.blogspot.com');" href="#">
      BLOG
     </div>
    </TD>
   </TR>
  </TABLE>
- <TABLE>
+
+ <TABLE id="contentTable">
   <TR>
   <TR>
    <TD></TD>
@@ -118,5 +106,6 @@
    <TD></TD>
   </TR>
  </TABLE>
+
 </BODY>
 </HTML>

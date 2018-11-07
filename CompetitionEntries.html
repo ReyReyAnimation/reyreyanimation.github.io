@@ -2,15 +2,7 @@
 <HEAD>
  <LINK rel="stylesheet" type="text/css" href="Text.css">
  <LINK rel="stylesheet" type="text/css" href="PictureMenu.css">
- <SCRIPT type="text/javascript">
-  var idealWidth = 1000;
-  var idealHeight = 2000;
-  function contentLoaded() {
-   idealHeight = document.getElementById('contentId').offsetHeight + 50;
-   idealWidth = document.getElementById('contentId').offsetWidth + 50;
-   parent.contentResize(idealHeight, idealWidth);
-  }
- </SCRIPT>
+ <SCRIPT type="text/javascript" src="Child.js"></SCRIPT>
 </HEAD>
 <BODY onload="contentLoaded()">
 <DIV id="contentId">
@@ -20,9 +12,9 @@
   <TR><TD colspan="3"><p class="header2Text">2018 D&AD New Blood - Beano Brief Collaboration</p></TD></TR>
   <TR>
    <TD colspan="3">
-    <div class="background" style="width:950px; background-image:url('images/Competition/BeanoLittleNutty.png');">
-     <div class="highlight" style="width:950px;" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('https://www.youtube.com/watch?v=hJLe9Y9Y1_E');" href="#">
-      <p>2018 D&AD IVY THE TERRIBLE</p>
+    <div class="picContainer" style="width:950px; background-image:url('images/Competition/BeanoLittleNutty.png');">
+     <div class="picOverlay" onmousedown="parent.newWebPage('https://www.youtube.com/watch?v=hJLe9Y9Y1_E');">
+      <div class="picText">2018 D&AD IVY THE TERRIBLE</div>
      </div>
     </div>
    </TD>
@@ -56,23 +48,23 @@
   </TR>
   <TR>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/11SecondClubCarRide.png'); border: 1px solid black;">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/august18/entry/QJWBF8');" href="#">
-      <p>CAR RIDE</p>
+    <div class="picContainer" style="background-image:url('images/Competition/11SecondClubCarRide.png'); border: 1px solid black;">
+     <div class="picOverlay" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/august18/entry/QJWBF8');">
+      <div class="picText">CAR RIDE</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/11SecondClubLadyLightingStrike.png'); border: 1px solid black;">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/october17/entry/9Uy07l');" href="#">
-      <p>LADY LIGHTNING STRIKE</p>
+    <div class="picContainer" style="background-image:url('images/Competition/11SecondClubLadyLightingStrike.png'); border: 1px solid black;">
+     <div class="picOverlay" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/october17/entry/9Uy07l');">
+      <div class="picText">LADY LIGHTNING STRIKE</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/11SecondClubUpToSomething.png'); border: 1px solid black;">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/march17/entry/zAZoBk');" href="#">
-      <p>UP TO SOMETHING</p>
+    <div class="picContainer" style="background-image:url('images/Competition/11SecondClubUpToSomething.png'); border: 1px solid black;">
+     <div class="picOverlay" onmousedown="parent.newWebPage('http://www.11secondclub.com/competitions/march17/entry/zAZoBk');">
+      <div class="picText">UP TO SOMETHING</div>
      </div>
     </div>
    </TD>
@@ -98,9 +90,9 @@
   <TR>
    <TD></TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/LDL-Maori-God-Tawhirimatea-Final.gif');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('http://www.loopdeloop.org/post/171847993302/maori-god-of-weather-tawhirimate');" href="#">
-      <p>TAWHIRIMATE</p>
+    <div class="picContainer" style="background-image:url('images/Competition/LDL-Maori-God-Tawhirimatea-Final.gif');">
+     <div class="picOverlay" onmousedown="parent.newWebPage('http://www.loopdeloop.org/post/171847993302/maori-god-of-weather-tawhirimate');">
+      <div class="picText">TAWHIRIMATE</div>
      </div>
     </div>
    </TD>
@@ -138,19 +130,19 @@
   </TR>
   <TR>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/YCNdrumrollsmall.jpg');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('https://www.ycn.org/news/2049-drumroll-commendations');" href="#">
-      <p>2017 YCN COMMENDATIONS</p>
+    <div class="picContainer" style="background-image:url('images/Competition/YCNdrumrollsmall.jpg');">
+     <div class="picOverlay" onmousedown="parent.newWebPage('https://www.ycn.org/news/2049-drumroll-commendations');">
+      <div class="picText">2017 YCN COMMENDATIONS</div>
      </div>
     </div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/Barbican2small.jpg');"></div>
+    <div class="picContainer" style="background-image:url('images/Competition/Barbican2small.jpg');"></div>
    </TD>
    <TD>
-    <div class="background" style="background-image:url('images/Competition/YCNsmall.png');">
-     <div class="highlight" onmouseover="this.className='highlightON';" onmouseout="this.className='highlight';" onmousedown="parent.newWebPage('https://vimeo.com/233452117');" href="#">
-      <p>2017 YCN AWARD CEREMONY</p>
+    <div class="picContainer" style="background-image:url('images/Competition/YCNsmall.png');">
+     <div class="picOverlay" onmousedown="parent.newWebPage('https://vimeo.com/233452117');">
+      <div class="picText">2017 YCN AWARD CEREMONY</div>
      </div>
     </div>
    </TD>

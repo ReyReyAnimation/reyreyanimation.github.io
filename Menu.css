@@ -1,24 +1,54 @@
-  div.penName {
-   background-image:url('images/Pen-Name-Animation.gif');
+  .penName {
+   position: relative;
    width: 90px;
    height: 105px;
-   background-position: center center;
-   background-repeat: no-repeat;
-   border: 1px solid white;
+   background-position:center center;
+   background-repeat:no-repeat;
    background-size: 250px 150px;
+   background-image:url('images/Pen-Name-Animation.gif');
   }
 
-  div.Coffee {
-   background-image:url('images/Coffee-2.gif');
+  .penOverlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 90px;
+   height: 105px;
+   opacity: 0;
+   transition: .5s ease;
+   background-position:center center;
+   background-repeat:no-repeat;
+   background: url('images/Hover.png');
+  }
+
+  .penName:hover .penOverlay {
+   opacity: 0.5;
+   cursor: pointer;
+  }
+
+  .penText {
+   margin-top: 42px;
+   font-weight: bold;
+   font-family: Calibri;
+   letter-spacing: 2px;
+   font-size: 20px;
+   text-align:center;
+   color: white;
+   opacity: 1.0;
+  }
+
+  .Coffee {
    width: 180px;
    height: 105px;
    background-position: center top;
    background-repeat: no-repeat;
-   border: 1px solid white;
    background-size: 250px 150px;
+   background-image:url('images/Coffee-2.gif');
   }
 
-  div.menu {
+  .menu {
    font-weight: bold;
    font-family: Calibri;
    letter-spacing: 2px;
@@ -26,11 +56,7 @@
    color: grey;
   }
 
-  div.menuON {
-   font-weight: bold;
-   font-family: Calibri;
-   letter-spacing: 2px;
-   font-size: 14px;
+  .menu:hover {
    color: black;
    cursor: pointer;
   }

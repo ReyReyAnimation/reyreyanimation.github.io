@@ -1,15 +1,7 @@
 <HTML>
 <HEAD>
  <LINK rel="stylesheet" type="text/css" href="Text.css">
- <SCRIPT type="text/javascript">
-  var idealWidth = 1000;
-  var idealHeight = 2000;
-  function contentLoaded() {
-   idealHeight = document.getElementById('contentId').offsetHeight + 50;
-   idealWidth = document.getElementById('contentId').offsetWidth + 50;
-   parent.contentResize(idealHeight, idealWidth);
-  }
- </SCRIPT></HEAD>
+ <SCRIPT type="text/javascript" src="Child.js"></SCRIPT>
 <BODY onload="contentLoaded()">
 <DIV id="contentId">
  <TABLE>
