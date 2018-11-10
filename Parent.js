@@ -2,6 +2,7 @@
    //alert('Parent: contentResize('+height+', '+width+')');
    document.getElementById('content').height = height;
    document.getElementById('content').width = width;
+   window.scrollTo(0,0);
   }
 
   function newIFrameContent(site, height, width) {
