@@ -3,8 +3,8 @@
 
   function contentLoaded() {
    //alert('Child: contentLoaded()');
-   idealHeight = document.getElementById('contentId').offsetHeight + 50;
-   idealWidth = document.getElementById('contentId').offsetWidth + 50;
+   idealHeight = document.getElementById('contentId').offsetHeight;
+   idealWidth = document.getElementById('contentId').offsetWidth;
    parent.contentResize(idealHeight, idealWidth);
   }
 

@@ -48,12 +48,16 @@
   }
 
   td {
-   border: 1px solid white;
+   border: 1px solid transparent;
    text-align: center;
    border-collapse: collapse;
   }
 
   table {
-   width: 1050;
+   width: 1060;
    border-collapse: collapse;
+  }
+
+  body {
+   margin: 0;
   }
