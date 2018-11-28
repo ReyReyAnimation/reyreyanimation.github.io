@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <SCRIPT type="text/javascript" src="Child.js"></SCRIPT>
+</HEAD>
+<BODY onload="contentLoaded();">
+<DIV id="contentId">
+ <TABLE>
+  <TR><TD colspan="3"><p class="header1Text">CONTACT FORM</p></TD></TR>
+  <TR><TD colspan="3" style="padding-top: 0px;"><HR/></TD></TR>
+ </TABLE>
+ <form name="contactform" method="post" action="http://reyreyanimation.com/send_form_email.php">
+  <table width="1050px" class="bodyText">
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="first_name">Given Name(s)</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="first_name" maxlength="100" size="130">
+    </td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="last_name">Family Name</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="last_name" maxlength="100" size="130">
+    </td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="email">Email Address</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="email" maxlength="100" size="130">
+    </td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="telephone">Telephone Number (Optional)</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="telephone" maxlength="100" size="130">
+    </td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="comments">Message</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <textarea name="comments" maxlength="2000" cols="105" rows="15"></textarea>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2" style="text-align:center">
+     <input type="submit" value="Submit">
+    </td>
+   </tr>
+  </table>
+ </form>
+</DIV>
+</BODY>
+</HTML>
