@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+ <LINK rel="stylesheet" type="text/css" href="Text.css">
+ <SCRIPT type="text/javascript" src="Child.js"></SCRIPT>
+</HEAD>
+<BODY onload="parent.contentResize(530, document.getElementById('contentId').offsetWidth + 10)">
+<DIV id="contentId">
+ <TABLE>
+  <TR><TD colspan="3"><p class="header1Text">CONTACT FORM</p></TD></TR>
+  <TR><TD colspan="3" style="padding-top: 0px;"><HR/></TD></TR>
+ </TABLE>
+ <form name="contactform" method="post" action="http://reyreyanimation.com/send_form_email.php">
+  <table class="bodyText">
+   <tr>
+    <td valign="top" style="width: 225px; text-align: left;">
+     <label for="first_name">Given Name(s)</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="first_name" maxlength="75" size="100">
+    </td>
+    <td style="text-align:right">
+     <input type="submit" value="Submit">
+    </td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="last_name">Family Name</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="last_name" maxlength="75" size="100">
+    </td>
+    <td></td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="email">Email Address</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="email" maxlength="75" size="100">
+    </td>
+    <td></td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="telephone">Telephone Number (Optional)</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="telephone" maxlength="75" size="100">
+    </td>
+    <td></td>
+   </tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="company">Company (Optional)</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <input type="text" name="company" maxlength="75" size="100">
+    </td>
+    <td></td>
+   </tr>
+   <tr><td colspan="3">&nbsp;</td></tr>
+   <tr>
+    <td valign="top" style="text-align: left;">
+     <label for="comments">Message</label>
+    </td>
+    <td valign="top" style="text-align: left;">
+     <textarea name="comments" maxlength="2000" cols="90" rows="20"></textarea>
+    </td>
+    <td valign="bottom" style="text-align:right">
+     <input type="submit" value="Submit">
+    </td>
+   </tr>
+  </table>
+ </form>
+</DIV>
+</BODY>
+</HTML>
