@@ -58,7 +58,7 @@
    border-collapse: collapse;
   }
 
-  textarea { resize: vertical; }
+  textarea { resize: none; }
 
   body {
    margin: 0;
