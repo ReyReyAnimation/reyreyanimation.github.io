@@ -39,7 +39,7 @@
 
   function switchSubject()
   {
-    alert('switchSubject()')
+    //alert('switchSubject()')
     var page = getUrlParam('subject', 'PictureMenu.html');
     newIFrameContent(page,'2000','1100');
   }
