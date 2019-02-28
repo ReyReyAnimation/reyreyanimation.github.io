@@ -16,3 +16,29 @@
    var win = window.open(site, '_blank');
    win.focus();
   }
+
+  function getUrlVars()
+  {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
+
+  function getUrlParam(parameter, defaultvalue)
+  {
+    var urlparameter = defaultvalue;
+    if (window.location.href.indexOf(parameter) > -1)
+    {
+      urlparameter = getUrlVars()[parameter];
+      urlparameter += '.html';
+    }
+    return urlparameter;
+  }
+
+  function switchSubject()
+  {
+    var page = getUrlParam('subject', 'PictureMenu.html');
+    newIFrameContent(page,'2000','1100');
+  }
