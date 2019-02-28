@@ -1,3 +1,23 @@
+function caravanMouseOver()
+{
+  var elem = document.getElementById("caravanBackground");
+  elem.style.cursor = 'pointer';
+  elem.style.opacity = 0.5;
+
+  var text = document.getElementById("caravanText");
+  text.style.opacity = 1.0;
+}
+
+function caravanMouseOut()
+{
+  var elem = document.getElementById("caravanBackground");
+  elem.style.cursor = 'auto';
+  elem.style.opacity = 1.0;
+
+  var text = document.getElementById("caravanText");
+  text.style.opacity = 0.0;
+}
+
 function caravanMove()
 {
   //Initialise caravan

@@ -19,3 +19,14 @@
    background-image: url('images/Animation/Caravan2.gif');
    opacity: 0.0;
   }
+
+  #caravanText {
+   margin-top: -10px;
+   font-weight: bold;
+   font-family: Calibri;
+   letter-spacing: 2px;
+   font-size: 20px;
+   text-align:center;
+   color: white;
+   opacity: 0.0;
+  }
