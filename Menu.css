@@ -39,6 +39,15 @@
    opacity: 1.0;
   }
 
+  .Title {
+   width: 500px;
+   height: 60px;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: 270px 60px;
+   background-image:url('images/reycurley1.JPG');
+  }
+
   .Coffee {
    width: 180px;
    height: 105px;
